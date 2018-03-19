@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Test">
+        <ListPreference
+            android:key="question"
+            android:title="2+2=?"
+            android:summary="Choose an answer"
+            android:dialogTitle="2+2=X Please enter X"
+            android:entries="@array/numArray"
+            android:entryValues="@array/numArray" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Univerzitet info">
+        <PreferenceScreen android:title="Druga kategorija">
+            <EditTextPreference
+                android:key="name_preference"
+                android:title="Enter faculty name"
+                android:dialogTitle="Name" />
+            <EditTextPreference
+                android:key="address_preference"
+                android:title="Enter faculty address"
+                android:dialogTitle="Address" />
+            <Preference
+                android:title="ShowResults"
+                android:key="show"
+                />
+            <Preference
+                android:key="DateFilter"
+                android:summary="Date and Time Picker"
+                android:title="Date and Time Picker" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>
