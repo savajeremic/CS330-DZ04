@@ -23,10 +23,17 @@
                 android:title="ShowResults"
                 android:key="show"
                 />
-            <Preference
-                android:key="DateFilter"
-                android:summary="Date and Time Picker"
-                android:title="Date and Time Picker" />
+            <com.android.sava.cs330_dz04.DatePreference
+                android:key="date"
+                android:title="Choose Date"
+                android:defaultValue="2018-03-18"
+                android:summary="Odaberite datum"
+                />
+            <com.android.sava.cs330_dz04.TimePreference
+                android:key="time"
+                android:title="Choose Time"
+                android:summary="Odaberite Vreme"
+                />
         </PreferenceScreen>
     </PreferenceCategory>
 </PreferenceScreen>
